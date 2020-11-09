@@ -1,7 +1,5 @@
 import SwiftUI
 
-@available(OSX 10.15, *)
-
 public class DelayedUpdater: ObservableObject {
 
     @Published var value = 0
