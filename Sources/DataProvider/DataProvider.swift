@@ -12,3 +12,20 @@ public class DelayedUpdater: ObservableObject {
         }
     }
 }
+
+public class DelayedUpdater2: ObservableObject {
+
+    public var value = 0 {
+        willSet {
+            objectWillChange.send()
+        }
+    }
+
+    public init() {
+        for i in 1...60 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)) {
+                self.value += 1
+            }
+        }
+    }
+}
