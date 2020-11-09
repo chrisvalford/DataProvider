@@ -2,7 +2,7 @@ import SwiftUI
 
 public class DelayedUpdater: ObservableObject {
 
-    @Published var value = 0
+    @Published public var value = 0
 
     public init() {
         for i in 1...100 {
