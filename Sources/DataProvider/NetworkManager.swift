@@ -25,7 +25,9 @@ public class NetworkManager: ObservableObject {
             guard let data = data else { return }
             do {
                 let offerResponse = try JSONDecoder().decode(OnlineOfferResponse.self, from: data)
-                self.results = offerResponse.offers // If in an app should be on main thread!
+                DispatchQueue.main.async {
+                    self.results = offerResponse.offers
+                }
             } catch {
                 return
             }
