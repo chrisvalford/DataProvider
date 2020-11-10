@@ -8,9 +8,9 @@
 import Foundation
 import Combine
 
-class NetworkManager: ObservableObject {
+public class NetworkManager: ObservableObject {
 
-    var didChange = PassthroughSubject<NetworkManager, Never>()
+    public var didChange = PassthroughSubject<NetworkManager, Never>()
 
     @Published public var results = [OnlineOffer]() {
         didSet {
