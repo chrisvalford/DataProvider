@@ -12,7 +12,7 @@ public class NetworkManager: ObservableObject {
 
     //public var didChange = PassthroughSubject<NetworkManager, Never>()
 
-    @Published public var results = [OnlineOffer]() //{
+    @Published public var results: [OnlineOffer] = [] //{
 //        didSet {
 //            didChange.send(self)
 //        }
