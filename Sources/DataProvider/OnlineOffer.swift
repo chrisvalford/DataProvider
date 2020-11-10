@@ -6,7 +6,8 @@
 import Foundation
 
 public struct OnlineOffer: Codable, Identifiable {
-    public let id: String
+    public var id = UUID()
+    public let sku: String
     public let title: String
     public let url: String
     public let _description: String
@@ -39,7 +40,7 @@ public struct OnlineOffer: Codable, Identifiable {
 //    }
 
     enum CodingKeys: String, CodingKey { 
-        case id = "sku"
+        case sku
         case title
         case url
         case _description = "description"
