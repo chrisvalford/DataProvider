@@ -10,13 +10,13 @@ import Combine
 
 public class NetworkManager: ObservableObject {
 
-    public var didChange = PassthroughSubject<NetworkManager, Never>()
+    //public var didChange = PassthroughSubject<NetworkManager, Never>()
 
-    @Published public var results = [OnlineOffer]() {
-        didSet {
-            didChange.send(self)
-        }
-    }
+    @Published public var results = [OnlineOffer]() //{
+//        didSet {
+//            didChange.send(self)
+//        }
+//    }
 
     public init?() {
         guard let url = URL(string: "https://marine.digital//INTERSHOP/static/WFS/Plus-NettoDE-Site/-/Plus-NettoDE/de_DE/Feed/os-angebote.json") else { return }
