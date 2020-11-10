@@ -7,9 +7,9 @@ import Foundation
 
 public struct OnlineOfferResponse: Codable {
 
-    let result: String
-    let returnCode: String
-    let offers: [OnlineOffer]
+    public let result: String
+    public let returnCode: String
+    public let offers: [OnlineOffer]
 
     enum CodingKeys: String, CodingKey {
         case result

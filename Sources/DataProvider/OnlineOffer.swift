@@ -7,19 +7,19 @@ import Foundation
 
 public struct OnlineOffer: Codable, Identifiable {
     public let id: String
-    let title: String
-    let url: String
-    let _description: String
-    let category: String
-    let image: String
-    let imageAdditional: String
-    let minOrderQuantity: String
-    let energie: String
-    let energieskala: String
-    let preis: String
-    let streichpreis: String
-    let uvp: String
-    let grundpreis: String
+    public let title: String
+    public let url: String
+    public let _description: String
+    public let category: String
+    public let image: String
+    public let imageAdditional: String
+    public let minOrderQuantity: String
+    public let energie: String
+    public let energieskala: String
+    public let preis: String
+    public let streichpreis: String
+    public let uvp: String
+    public let grundpreis: String
 
 //    public init(sku: String?, title: String?, url: String?, _description: String?, category: String?, image: String?, imageAdditional: String?, minOrderQuantity: String?, energie: String?, energieskala: String?, preis: String?, streichpreis: String?, uvp: String?, grundpreis: String?) {
 //        self.sku = sku
